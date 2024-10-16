@@ -1,0 +1,162 @@
+/* Заборона прокрутки */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Забороняє будь-яку прокрутку */
+}
+.point{
+    background: #e4e4e4;
+
+}
+/* Фонове зображення без повторення */
+body {
+    background-image: url('/static/mountainsBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Забороняє повторення фону */
+}
+
+/* Верхній чорний прямокутник */
+header {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backdrop-filter: blur(20px); /* Apply blur effect to background */
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+}
+
+/* Нижній чорний прямокутник */
+footer {
+    height: 15vh;
+    margin-top: 11.5vh;
+    backdrop-filter: blur(20px);
+    /*background-color: black;*/
+   box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Основний контент */
+.content {
+    height: 54vh; /* Між чорними прямокутниками */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background: #b11616;*/
+}
+
+.logo-header {
+    background-image: url('../welcome_tabel.png');
+    background-size: cover;
+    width: 371px;
+    height: 69px;
+    margin-bottom: 10px;
+}
+.content_container {
+    width: 95%;
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*background: #4ac1f7;*/
+}
+.content_grp{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /*background: #003366;*/
+}
+.logo_menu_peach{
+    width: 112px;
+    height: 102px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../calculators_logo.png);
+}
+.text_calculators_menu {
+    margin-right: 32px;
+    margin-top: 20px;
+    width: 287px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../calculators_text.png);
+}
+.text_menu_wiki {
+    margin-right: 105px;
+    width: 122px;
+    height: 59px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../wiki_text.png);
+}
+.logo_menu_star{
+    margin-left: 57px;
+    width: 77px;
+    height: 77px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../wiki_logo.png);
+}
+.menu_logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    background-image: url(../menu_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 357px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.content_social{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background: #003366;*/
+}
+
+.social_logo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 65px;
+    width: 71px;
+    height: 1px;
+    font-family: 'Arial', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+

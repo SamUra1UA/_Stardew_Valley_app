@@ -1,0 +1,49 @@
+/* Заборона прокрутки */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Забороняє будь-яку прокрутку */
+}
+
+/* Фонове зображення без повторення */
+body {
+    background: #000;
+    /*background-image: url('/static/mountainsBg.png');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Забороняє повторення фону */
+}
+
+/* Верхній чорний прямокутник */
+header {
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Нижній чорний прямокутник */
+footer {
+    height: 8vh;
+    background-color: black;
+}
+
+/* Основний контент */
+.content {
+    min-height: 84vh; /* Між чорними прямокутниками */
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-header {
+
+    background-size: cover;
+    width: 100px;
+    height: 69px;
+}
