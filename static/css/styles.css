@@ -1,0 +1,185 @@
+
+
+html, body {
+   height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: 'IQOS', sans-serif;
+    background-image: url('/static/mountainsBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background Styling */
+body {
+    background-image: url('/static/mountainsBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Header */
+header {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+
+.logo-header {
+    background-image: url('../welcome_tabel.png');
+    background-size: cover;
+    width: 371px;
+    height: 69px;
+    margin-bottom: 10px;
+}
+
+/* Main Logo */
+.menu_logo {
+    margin-top: 20px;
+    margin-left: 18px;
+    background-image: url('../menu_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 357px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Section */
+.content {
+    height: 54vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.content_grp {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: space-between;
+
+}
+
+.content_grp:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Menu Icons */
+.logo_menu_peach, .logo_menu_star {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo_menu_peach {
+    background-image: url('../calculators_logo.png');
+}
+
+.logo_menu_star {
+    background-image: url('../wiki_logo.png');
+}
+
+/* Menu Text */
+.text_calculators_menu, .text_menu_wiki {
+    width: 250px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text_calculators_menu {
+    background-image: url('../calculators_text.png');
+}
+
+.text_menu_wiki {
+    background-image: url('../wiki_text.png');
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+    margin-right: 60px;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 48px;
+    width: 90%;
+    height: 15vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.social_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.social_logo p {
+    margin: 0;
+}
+
+.social_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.social_icon {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+.icon-telegram, .icon-instagram, .icon-reddit, .icon-twitter {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
