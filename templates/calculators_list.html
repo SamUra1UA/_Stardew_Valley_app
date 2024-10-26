@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stardew Wiki</title>
+    <title>Calculators</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/alculator_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/сalculator_styles.css' %}">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h2>Welcome to</h2>
-            <h1>Stardew Wiki</h1>
-        </header>
-        
-        <main>
-            <h3>Menu</h3>
-            <ul class="menu">
-                <li><img src="icon1.png" alt="Artifact Icon"> Artifacts</li>
-                <li><img src="icon2.png" alt="Artisan Goods Icon"> Artisan Goods</li>
-                <li><img src="icon3.png" alt="Bait Icon"> Bait</li>
-            </ul>
-        </main>
-        
-        <footer>
-            <div class="social-icons">
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"> Instagram</a>
-                <a href="#"><img src="telegram-icon.png" alt="Telegram"> Telegram</a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"> Twitter</a>
-                <a href="#"><img src="reddit-icon.png" alt="Reddit"> Reddit</a>
+
+    <header>
+        <div class="logo-header">
+            <h1 class="logo-text">Calculators</h1>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content_container">
+            <!-- Seed Expenses Calculator -->
+            <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators/seed';">
+                <div class="icon icon-seed"></div>
+                <div class="text_calculators_menu">Calculator Seed expenses</div>
             </div>
-        </footer>
+
+            <!-- Profit Calculator -->
+            <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators/profit';">
+                <div class="icon icon-profit"></div>
+                <div class="text_calculators_menu">Profit calculator</div>
+            </div>
+
+            <!-- High-Yield Crops Calculator -->
+            <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators/crops';">
+                <div class="icon icon-crops"></div>
+                <div class="text_calculators_menu">Calculator of high-yielding crops</div>
+            </div>
+
+            <!-- Fertilizer Costs -->
+            <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators/fertilizer';">
+                <div class="icon icon-fertilizer"></div>
+                <div class="text_calculators_menu">Fertilizer costs</div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <div class="content_social">
+            <div class="social_logo">
+                <div class="social_icon icon-telegram"></div>
+                <p>Telegram</p>
+            </div>
+            <div class="social_logo">
+                <div class="social_icon icon-instagram"></div>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <div class="content_social">
+            <div class="social_logo">
+                <div class="social_icon icon-reddit"></div>
+                <p>Reddit</p>
+            </div>
+            <div class="social_logo">
+                <div class="social_icon icon-twitter"></div>
+                <p>Twitter</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

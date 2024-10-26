@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чорні прямокутники і фонове зображення</title>
+    <title>Головна Сторінка</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
@@ -11,28 +11,42 @@
     <header>
         <div class="logo-header"></div>
     </header>
-    <div class="menu_logo"></div>
-    <div class="content">
 
+    <div class="menu_logo"></div>
+
+    <div class="content">
         <div class="content_container">
-        <div class="content_grp" onclick="window.location.href='https://stardewvalley.fandom.com/wiki/Stardew_Valley_Wiki';">
-            <div class="logo_menu_star"></div>
-            <div class="text_menu_wiki"></div>
-        </div>
-        <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators';">
-            <div class="logo_menu_peach"></div>
-            <div class="text_calculators_menu"></div>
-        </div>
+            <div class="content_grp" onclick="window.location.href='https://stardewvalley.fandom.com/wiki/Stardew_Valley_Wiki';">
+                <div class="logo_menu_star"></div>
+                <div class="text_menu_wiki"></div>
+            </div>
+            <div class="content_grp" onclick="window.location.href='http://localhost:8000/calculators';">
+                <div class="logo_menu_peach"></div>
+                <div class="text_calculators_menu"></div>
+            </div>
         </div>
     </div>
-    <footer>
+
+   <footer>
         <div class="content_social">
-            <div class="social_logo"><p>Telegram</p></div>
-            <div class="social_logo"><p>Instagram</p></div>
+            <div class="social_logo">
+                <div class="social_icon icon-telegram"></div>
+                <p>Telegram</p>
+            </div>
+            <div class="social_logo">
+                <div class="social_icon icon-instagram"></div>
+                <p>Instagram</p>
+            </div>
         </div>
         <div class="content_social">
-            <div class="social_logo"><p>Reddit</p></div>
-            <div class="social_logo"><p>Twitter</p></div>
+            <div class="social_logo">
+                <div class="social_icon icon-reddit"></div>
+                <p>Reddit</p>
+            </div>
+            <div class="social_logo">
+                <div class="social_icon icon-twitter"></div>
+                <p>Twitter</p>
+            </div>
         </div>
     </footer>
 </body>

@@ -1,55 +1,36 @@
-/* Заборона прокрутки */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Забороняє будь-яку прокрутку */
-}
-.point{
-    background: #e4e4e4;
 
+
+html, body {
+   height: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: 'IQOS', sans-serif;
+    background-image: url('/static/mountainsBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* Фонове зображення без повторення */
+
+/* Background Styling */
 body {
     background-image: url('/static/mountainsBg.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /* Забороняє повторення фону */
+    background-repeat: no-repeat;
+
 }
 
-/* Верхній чорний прямокутник */
+/* Header */
 header {
     height: 11vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    backdrop-filter: blur(20px); /* Apply blur effect to background */
-    /*background-color: rgba(255, 255, 255, 0.3);*/
-}
-
-/* Нижній чорний прямокутник */
-footer {
-    height: 15vh;
-    margin-top: 11.5vh;
     backdrop-filter: blur(20px);
-    /*background-color: black;*/
-   box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Основний контент */
-.content {
-    height: 54vh; /* Між чорними прямокутниками */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /*background: #b11616;*/
 }
 
 .logo-header {
@@ -59,66 +40,12 @@ footer {
     height: 69px;
     margin-bottom: 10px;
 }
-.content_container {
-    width: 95%;
-    height: 50%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /*background: #4ac1f7;*/
-}
-.content_grp{
-    width: 100%;
-    height: 125px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    /*background: #003366;*/
-}
-.logo_menu_peach{
-    width: 112px;
-    height: 102px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../calculators_logo.png);
-}
-.text_calculators_menu {
-    margin-right: 32px;
+
+/* Main Logo */
+.menu_logo {
     margin-top: 20px;
-    width: 287px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../calculators_text.png);
-}
-.text_menu_wiki {
-    margin-right: 105px;
-    width: 122px;
-    height: 59px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../wiki_text.png);
-}
-.logo_menu_star{
-    margin-left: 57px;
-    width: 77px;
-    height: 77px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../wiki_logo.png);
-}
-.menu_logo{
-    margin-top: 20px;
-    margin-left: 20px;
-    background-image: url(../menu_logo.png);
+    margin-left: 18px;
+    background-image: url('../menu_logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,36 +54,132 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
 }
-.content_social{
+
+/* Content Section */
+.content {
+    height: 54vh;
     width: 100%;
-    height: 15vh;
     display: flex;
-    box-sizing: border-box;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    /*background: #003366;*/
+    text-align: center;
 }
 
-.social_logo{
+.content_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.content_grp {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: space-between;
+
+}
+
+.content_grp:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Menu Icons */
+.logo_menu_peach, .logo_menu_star {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.logo_menu_peach {
+    background-image: url('../calculators_logo.png');
+}
+
+.logo_menu_star {
+    background-image: url('../wiki_logo.png');
+}
+
+/* Menu Text */
+.text_calculators_menu, .text_menu_wiki {
+    width: 250px;
+    height: 60px;
     background-size: cover;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 65px;
-    width: 71px;
-    height: 1px;
-    font-family: 'Arial', serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 25px;
-    color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text_calculators_menu {
+    background-image: url('../calculators_text.png');
+}
+
+.text_menu_wiki {
+    background-image: url('../wiki_text.png');
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+    margin-right: 60px;
 }
 
 
+/* Footer */
+footer {
+    margin-top: 48px;
+    width: 90%;
+    height: 15vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.content_social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.social_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.social_logo p {
+    margin: 0;
+}
+
+.social_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.social_icon {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+.icon-telegram, .icon-instagram, .icon-reddit, .icon-twitter {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
